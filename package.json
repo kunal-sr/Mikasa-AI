@@ -1,0 +1,31 @@
+{
+  "name": "mikasa",
+  "version": "0.1.0",
+  "description": "Desktop AI companion MVP with voice, memory, and immersive presence.",
+  "private": true,
+  "main": "dist-electron/src/main/index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently \"vite\" \"tsc -p tsconfig.node.json --watch\" \"wait-on tcp:5173 && electron .\"",
+    "build": "tsc -p tsconfig.node.json && vite build",
+    "preview": "vite preview",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/electron": "^1.6.12",
+    "@types/node": "^22.13.10",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "electron": "^35.0.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.1",
+    "vitest": "^3.0.8",
+    "wait-on": "^8.0.3"
+  }
+}

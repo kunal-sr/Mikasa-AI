@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "allowSyntheticDefaultImports": true,
+    "target": "ES2022",
+    "lib": ["ES2022", "DOM"],
+    "strict": true,
+    "types": ["node"],
+    "outDir": "dist-electron"
+  },
+  "include": ["src/main", "src/shared", "vite.config.ts"]
+}
